@@ -83,7 +83,7 @@ class App(Frame):
         self.core = Core(self.log)
         master = Tk()
         Frame.__init__(self, master)
-        master.title('FK_ArtStation下载器 v' + version)  # 定义窗体标题
+        master.title('FK_ArtStation下载器 by FreeKnight 當前版本：' + version)  # 定义窗体标题
         root_path_config = config.read_config(
             'config.ini', 'Paths', 'root_path')
         self.root_path = root_path_config or os.path.join(
